@@ -1,0 +1,123 @@
+"Games"
+{
+	"nmrih"
+	{
+		"Signatures"
+		{
+			"CNMRiH_BaseZombie::ClawAttack"
+			{
+				"library"	"server"
+				"linux"		"@_ZN17CNMRiH_BaseZombie10ClawAttackEffRK6QAngleRK6Vectori"
+				"windows"	"\x55\x8B\xEC\x81\xEC\xC4\x01\x00\x00\x56\xF3\x0F\x2C\x75\x0C\x57\x6A\x01\x6A\x6C\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x8B\x0D\x2A\x2A\x2A\x2A\x83\xEC\x08\x88\x45\xFF"
+			}
+		}
+
+		"MemPatches"
+		{
+			// On Windows we patch the hullMins and hullMaxs that are fed to the tracehull
+			"hullMax.x"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"windows"
+				{
+					"offset"	"D0h"
+					"verify"	"\x41"
+					"patch"		"\x00"
+				}
+			}
+			"hullMax.y"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"windows"
+				{
+					"offset"	"DDh"
+					"verify"	"\x41"
+					"patch"		"\x00"
+				}
+			}	
+			"hullMax.z"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"windows"
+				{
+					"offset"	"F0h"
+					"verify"	"\x41"
+					"patch"		"\x00"
+				}
+			}	
+			"hullMin.x"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"windows"
+				{
+					"offset"	"FBh"
+					"verify"	"\xC1"
+					"patch"		"\x00"
+				}
+			}	
+			"hullMin.y"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"windows"
+				{
+					"offset"	"105h"
+					"verify"	"\xC1"
+					"patch"		"\x00"
+				}
+			}
+			"hullMin.z"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"windows"
+				{
+					"offset"	"10Ch"
+					"verify"	"\xC1"
+					"patch"		"\x00"
+				}
+			}
+
+			// On Linux the tracehull is inlined, so we patch Ray_t directly
+			// Big thanks to asherkin for helping out with the dissasembly 
+			"m_isRay"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"linux"
+				{
+					"offset"	"126h"
+					"verify"	"\x00"
+					"patch"		"\x01"
+				}
+			}
+			"m_Extents.x"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"linux"
+				{
+					"offset"	"130h"
+					"verify"	"\x41"
+					"patch"		"\x00"
+				}
+			}
+			"m_Extents.y"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"linux"
+				{
+					"offset"	"13Eh"
+					"verify"	"\x41"
+					"patch"		"\x00"
+				}
+			}
+			"m_Extents.z"
+			{
+				"signature" "CNMRiH_BaseZombie::ClawAttack"
+				"linux"
+				{
+					"offset"	"154h"
+					"verify"	"\x41"
+					"patch"		"\x00"
+				}
+			}
+		}
+	}
+}
