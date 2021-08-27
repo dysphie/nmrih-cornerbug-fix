@@ -28,7 +28,7 @@ bool patched;
 
 public void OnPluginStart()
 {
-	GameData gamedata = new GameData("corner15.games");
+	GameData gamedata = new GameData("cornerbugfix.games");
 	if (!gamedata)
 		SetFailState("Failed to locate gamedata file");
 
