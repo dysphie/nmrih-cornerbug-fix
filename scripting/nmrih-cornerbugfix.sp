@@ -80,6 +80,9 @@ void Patch()
 
 void Unpatch()
 {
+	if (!patched)
+		return;
+	
 	if (os == OS_WINDOWS)
 		UnpatchWindows();
 	else if (os == OS_LINUX)
