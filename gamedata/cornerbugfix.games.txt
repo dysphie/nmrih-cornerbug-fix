@@ -2,122 +2,58 @@
 {
 	"nmrih"
 	{
+		"Offsets"
+		{
+			"Operating System"
+			{
+				"windows" "0"
+				"linux"	"1"
+			}
+		}
+		"Addresses"
+		{
+			"CNMRiH_BaseZombie::ClawAttack"
+			{
+				"windows"
+				{
+					"signature"	"CNMRiH_BaseZombie::ClawAttack"
+				}
+				"linux"
+				{
+					"signature"	"CNMRiH_BaseZombie::ClawAttack"
+				}
+			}
+			"CNMRiH_BaseZombie::CanAttackEntity"
+			{
+				"windows"
+				{
+					"signature"	"CNMRiH_BaseZombie::CanAttackEntity"
+				}
+				"linux"
+				{
+					"signature"	"CNMRiH_BaseZombie::CanAttackEntity"
+				}
+			}
+		}
+
 		"Signatures"
 		{
 			"CNMRiH_BaseZombie::ClawAttack"
 			{
 				"library"	"server"
-				"linux"		"@_ZN17CNMRiH_BaseZombie10ClawAttackEffRK6QAngleRK6Vectori"
 				"windows"	"\x55\x8B\xEC\x81\xEC\xC4\x01\x00\x00\x56\xF3\x0F\x2C\x75\x0C\x57\x6A\x01\x6A\x6C\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x8B\x0D\x2A\x2A\x2A\x2A\x83\xEC\x08\x88\x45\xFF"
-			}
-		}
-
-		"MemPatches"
-		{
-			// On Windows we patch the hullMins and hullMaxs that are fed to the tracehull
-			"hullMax.x"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"windows"
-				{
-					"offset"	"D0h"
-					"verify"	"\x41"
-					"patch"		"\x00"
-				}
-			}
-			"hullMax.y"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"windows"
-				{
-					"offset"	"DDh"
-					"verify"	"\x41"
-					"patch"		"\x00"
-				}
-			}	
-			"hullMax.z"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"windows"
-				{
-					"offset"	"F0h"
-					"verify"	"\x41"
-					"patch"		"\x00"
-				}
-			}	
-			"hullMin.x"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"windows"
-				{
-					"offset"	"FBh"
-					"verify"	"\xC1"
-					"patch"		"\x00"
-				}
-			}	
-			"hullMin.y"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"windows"
-				{
-					"offset"	"105h"
-					"verify"	"\xC1"
-					"patch"		"\x00"
-				}
-			}
-			"hullMin.z"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"windows"
-				{
-					"offset"	"10Ch"
-					"verify"	"\xC1"
-					"patch"		"\x00"
-				}
+				"linux"		"@_ZN17CNMRiH_BaseZombie10ClawAttackEffRK6QAngleRK6Vectori"
 			}
 
-			// On Linux the tracehull is inlined, so we patch Ray_t directly
-			// Big thanks to asherkin for helping out with the dissasembly 
-			"m_isRay"
+			"CNMRiH_BaseZombie::CanAttackEntity"
 			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"linux"
-				{
-					"offset"	"126h"
-					"verify"	"\x00"
-					"patch"		"\x01"
-				}
-			}
-			"m_Extents.x"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"linux"
-				{
-					"offset"	"130h"
-					"verify"	"\x41"
-					"patch"		"\x00"
-				}
-			}
-			"m_Extents.y"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"linux"
-				{
-					"offset"	"13Eh"
-					"verify"	"\x41"
-					"patch"		"\x00"
-				}
-			}
-			"m_Extents.z"
-			{
-				"signature" "CNMRiH_BaseZombie::ClawAttack"
-				"linux"
-				{
-					"offset"	"154h"
-					"verify"	"\x41"
-					"patch"		"\x00"
-				}
+				"library"	"server"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x38\x01\x00\x00\x83\x7B\x08\x00"
+				"linux"		"@_ZN17CNMRiH_BaseZombie15CanAttackEntityEP11CBaseEntityP10CGameTrace"
 			}
 		}
 	}
 }
+
+
+
