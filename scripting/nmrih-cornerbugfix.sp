@@ -11,8 +11,8 @@ public Plugin myinfo =
 	name        = "Cornerbug Exploit Fix",
 	author      = "Dysphie",
 	description = "Fix exploit abusing corner geometry to take no damage from NPCs",
-	version     = "1.3.0",
-	url         = "https://forums.alliedmods.net/showthread.php?p=2747413"
+	version     = "1.3.1",
+	url         = "https://github.com/dysphie/nmrih-cornerbug-fix"
 };
 
 ConVar cvPatch;
