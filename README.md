@@ -4,6 +4,8 @@ Allows zombies to properly track and attack players standing on corners or doorw
 
 This fixes a common exploit where players abuse geometry to confuse NPCs and take no damage from them.
 
+[AlliedModders thread](https://forums.alliedmods.net/showthread.php?p=2747413)
+
 
 ![image](https://user-images.githubusercontent.com/11559683/131224829-912643e3-c0aa-4aa3-9e2f-201135e675a9.png)
 
