@@ -2,6 +2,44 @@
 {
 	"nmrih"
 	{
+		"Keys"
+		{
+			// Thanks: asherkin for helping me understand the Linux inlining!
+
+			// Offsets into Ray_t::m_isRay and Ray_t::m_Extents in CNMRiH_BaseZombie::CanAttackEntity
+			// Function has string "player_pickup"
+			"linux_CanAttackEntity_isRay"    "1660"
+			"linux_CanAttackEntity_ExtentsX" "1670"
+			"linux_CanAttackEntity_ExtentsY" "1684"
+			"linux_CanAttackEntity_ExtentsZ" "1706"
+
+			// Offsets into Ray_t::m_isRay and Ray_t::m_Extents in CNMRiH_BaseZombie::ClawAttack
+			// Function has strings "blood_left" and "blood_right"
+			"linux_ClawAttack_isRay"    "294"
+			"linux_ClawAttack_ExtentsX" "304"
+			"linux_ClawAttack_ExtentsY" "318"
+			"linux_ClawAttack_ExtentsZ" "340"
+
+			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::CanAttackEntity
+			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
+			"windows_CanAttackEntity_MinsX" "791"
+			"windows_CanAttackEntity_MinsY" "810"
+			"windows_CanAttackEntity_MinsZ" "821"
+			"windows_CanAttackEntity_MaxsX" "833"
+			"windows_CanAttackEntity_MaxsY" "840"
+			"windows_CanAttackEntity_MaxsZ" "847"
+
+			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::ClawAttack
+			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
+			"windows_ClawAttack_MinsX" "208"
+			"windows_ClawAttack_MinsY" "221"
+			"windows_ClawAttack_MinsZ" "240"
+			"windows_ClawAttack_MaxsX" "251"
+			"windows_ClawAttack_MaxsY" "261"
+			"windows_ClawAttack_MaxsZ" "268"
+		}
+
+
 		"Offsets"
 		{
 			"Operating System"
@@ -54,6 +92,3 @@
 		}
 	}
 }
-
-
-
