@@ -8,6 +8,7 @@
 
 			// Offsets into Ray_t::m_isRay and Ray_t::m_Extents in CNMRiH_BaseZombie::CanAttackEntity
 			// Function has string "player_pickup"
+			// FIXME: 1.12.3 support
 			"linux_CanAttackEntity_isRay"    "1660"
 			"linux_CanAttackEntity_ExtentsX" "1670"
 			"linux_CanAttackEntity_ExtentsY" "1684"
@@ -15,6 +16,7 @@
 
 			// Offsets into Ray_t::m_isRay and Ray_t::m_Extents in CNMRiH_BaseZombie::ClawAttack
 			// Function has strings "blood_left" and "blood_right"
+			// FIXME: 1.12.3 support
 			"linux_ClawAttack_isRay"    "294"
 			"linux_ClawAttack_ExtentsX" "304"
 			"linux_ClawAttack_ExtentsY" "318"
@@ -22,21 +24,21 @@
 
 			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::CanAttackEntity
 			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
-			"windows_CanAttackEntity_MinsX" "791"
-			"windows_CanAttackEntity_MinsY" "810"
-			"windows_CanAttackEntity_MinsZ" "821"
-			"windows_CanAttackEntity_MaxsX" "833"
-			"windows_CanAttackEntity_MaxsY" "840"
-			"windows_CanAttackEntity_MaxsZ" "847"
+			"windows_CanAttackEntity_MinsX" "963"
+			"windows_CanAttackEntity_MinsY" "988"
+			"windows_CanAttackEntity_MinsZ" "1005"
+			"windows_CanAttackEntity_MaxsX" "1020"
+			"windows_CanAttackEntity_MaxsY" "1030"
+			"windows_CanAttackEntity_MaxsZ" "1040"
 
 			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::ClawAttack
 			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
-			"windows_ClawAttack_MinsX" "208"
-			"windows_ClawAttack_MinsY" "221"
-			"windows_ClawAttack_MinsZ" "240"
-			"windows_ClawAttack_MaxsX" "251"
-			"windows_ClawAttack_MaxsY" "261"
-			"windows_ClawAttack_MaxsZ" "268"
+			"windows_ClawAttack_MinsX" "258"
+			"windows_ClawAttack_MinsY" "271"
+			"windows_ClawAttack_MinsZ" "293"
+			"windows_ClawAttack_MaxsX" "304"
+			"windows_ClawAttack_MaxsY" "314"
+			"windows_ClawAttack_MaxsZ" "321"
 		}
 
 
@@ -79,14 +81,14 @@
 			"CNMRiH_BaseZombie::ClawAttack"
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x81\xEC\xC4\x01\x00\x00\x56\xF3\x0F\x2C"
+				"windows"	"\x55\x8B\xEC\x81\xEC\xDC\x01\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5"
 				"linux"		"@_ZN17CNMRiH_BaseZombie10ClawAttackEffRK6QAngleRK6Vectori"
 			}
 
 			"CNMRiH_BaseZombie::CanAttackEntity"
 			{
 				"library"	"server"
-				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x28\x01\x00\x00\x83\x7B\x08\x00"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x38\x01\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x8B\x43\x08\x89\x85\x34\xFF\xFF\xFF"
 				"linux"		"@_ZN17CNMRiH_BaseZombie15CanAttackEntityEP11CBaseEntityP10CGameTrace"
 			}
 		}
