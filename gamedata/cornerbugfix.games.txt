@@ -24,21 +24,21 @@
 
 			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::CanAttackEntity
 			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
-			"windows_CanAttackEntity_MinsX" "963"
-			"windows_CanAttackEntity_MinsY" "988"
-			"windows_CanAttackEntity_MinsZ" "1005"
-			"windows_CanAttackEntity_MaxsX" "1020"
-			"windows_CanAttackEntity_MaxsY" "1030"
-			"windows_CanAttackEntity_MaxsZ" "1040"
+			"windows_CanAttackEntity_MinsX" "791"
+			"windows_CanAttackEntity_MinsY" "810"
+			"windows_CanAttackEntity_MinsZ" "821"
+			"windows_CanAttackEntity_MaxsX" "833"
+			"windows_CanAttackEntity_MaxsY" "840"
+			"windows_CanAttackEntity_MaxsZ" "847"
 
 			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::ClawAttack
 			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
-			"windows_ClawAttack_MinsX" "258"
-			"windows_ClawAttack_MinsY" "271"
-			"windows_ClawAttack_MinsZ" "293"
-			"windows_ClawAttack_MaxsX" "304"
-			"windows_ClawAttack_MaxsY" "314"
-			"windows_ClawAttack_MaxsZ" "321"
+			"windows_ClawAttack_MinsX" "199"
+			"windows_ClawAttack_MinsY" "212"
+			"windows_ClawAttack_MinsZ" "231"
+			"windows_ClawAttack_MaxsX" "242"
+			"windows_ClawAttack_MaxsY" "252"
+			"windows_ClawAttack_MaxsZ" "259"
 		}
 
 
@@ -81,14 +81,14 @@
 			"CNMRiH_BaseZombie::ClawAttack"
 			{
 				"library"	"server"
-				"windows"	"\x55\x8B\xEC\x81\xEC\xDC\x01\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5"
+				"windows"	"\x55\x8B\xEC\x81\xEC\xC4\x01\x00\x00\x56\x57\x6A\x01"
 				"linux"		"@_ZN17CNMRiH_BaseZombie10ClawAttackEffRK6QAngleRK6Vectori"
 			}
 
 			"CNMRiH_BaseZombie::CanAttackEntity"
 			{
 				"library"	"server"
-				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x38\x01\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x8B\x43\x08\x89\x85\x34\xFF\xFF\xFF"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x28\x01\x00\x00\x83\x7B\x08\x00"
 				"linux"		"@_ZN17CNMRiH_BaseZombie15CanAttackEntityEP11CBaseEntityP10CGameTrace"
 			}
 		}
