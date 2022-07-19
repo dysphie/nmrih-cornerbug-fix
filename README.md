@@ -1,8 +1,6 @@
 # [NMRiH] Cornerbug Exploit Fix
 
-Allows zombies to properly track and attack players standing on corners or doorways.
-
-This fixes a common exploit where players abuse geometry to confuse NPCs and take no damage from them.
+Fixes an exploit where players abuse corner geometry to take no damage from NPCs
 
 [AlliedModders thread](https://forums.alliedmods.net/showthread.php?p=2747413)
 
