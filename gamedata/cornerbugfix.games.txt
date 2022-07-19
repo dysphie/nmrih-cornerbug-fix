@@ -8,7 +8,6 @@
 
 			// Offsets into Ray_t::m_isRay and Ray_t::m_Extents in CNMRiH_BaseZombie::CanAttackEntity
 			// Function has string "player_pickup"
-			// FIXME: 1.12.3 support
 			"linux_CanAttackEntity_isRay"    "1660"
 			"linux_CanAttackEntity_ExtentsX" "1670"
 			"linux_CanAttackEntity_ExtentsY" "1684"
@@ -16,11 +15,10 @@
 
 			// Offsets into Ray_t::m_isRay and Ray_t::m_Extents in CNMRiH_BaseZombie::ClawAttack
 			// Function has strings "blood_left" and "blood_right"
-			// FIXME: 1.12.3 support
-			"linux_ClawAttack_isRay"    "294"
-			"linux_ClawAttack_ExtentsX" "304"
-			"linux_ClawAttack_ExtentsY" "318"
-			"linux_ClawAttack_ExtentsZ" "340"
+			"linux_ClawAttack_isRay"    "278"
+			"linux_ClawAttack_ExtentsX" "288"
+			"linux_ClawAttack_ExtentsY" "302"
+			"linux_ClawAttack_ExtentsZ" "324"
 
 			// Offsets into ray mins/maxs in CNMRiH_BaseZombie::CanAttackEntity
 			// Function has string "player_pickup" and relevant tracehull uses mask 0x400Bu
