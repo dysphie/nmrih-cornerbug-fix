@@ -1,3 +1,5 @@
+> ⚠️ As of [NMRiH 1.13.3](https://steamcommunity.com/app/224260/eventcomments/3805031898642935458), this plugin is no longer maintained or necessary. The update addresses the issue.
+
 # [NMRiH] Cornerbug Exploit Fix
 
 Fixes an exploit where players abuse corner geometry to take no damage from NPCs
